@@ -15,16 +15,26 @@
                       <v-radio label="45s" value="45"></v-radio>
                       <v-radio label="60s" value="60"></v-radio>
                     </v-radio-group>
-                    <v-btn @click="startRecord" fab :disabled="isRecording"><v-icon>fiber_manual_record</v-icon></v-btn>
-                    <v-btn @click="control" fab :disabled="controlDisabled"><v-icon>{{ controlIcon }}</v-icon></v-btn>
-                    <v-btn fab :disabled="!hasRecorded"><v-icon>save</v-icon></v-btn>
+                    <v-btn @click="startRecord" fab :disabled="isRecording">
+                      <v-icon>fiber_manual_record</v-icon>
+                    </v-btn>
+                    <v-btn @click="control" fab :disabled="controlDisabled">
+                      <v-icon>{{ controlIcon }}</v-icon>
+                    </v-btn>
+                    <v-btn @click="download" fab :disabled="!hasRecorded">
+                      <v-icon>save</v-icon>
+                    </v-btn>
                   </v-flex>
                   <v-flex xs4>
-                      <span class="display-4">{{ String(remainLength).padStart(2, '0') }}</span>
+                    <span class="display-4">{{ String(remainLength).padStart(2, '0') }}</span>
                   </v-flex>
                 </v-layout>
               </v-card-text>
               <!-- <v-card-actions></v-card-actions> -->
+              <v-snackbar v-model="snackbar" color="error">
+                {{ errorMsg }}
+                <v-btn dark flat @click="snackbar = false">Close</v-btn>
+              </v-snackbar>
             </v-card>
           </v-flex>
         </v-layout>
