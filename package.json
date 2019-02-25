@@ -1,0 +1,18 @@
+{
+  "name": "countdown-recorder",
+  "version": "1.0.0",
+  "description": "A countdown recorder for TOEFL speaking test practice.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanwu1105/countdown-recorder.git"
+  },
+  "author": "Sean Wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanwu1105/countdown-recorder/issues"
+  },
+  "homepage": "https://github.com/seanwu1105/countdown-recorder#readme"
+}
