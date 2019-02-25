@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A countdown recorder for TOEFL speaking test practice.",
   "scripts": {
+    "serve": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/seanwu1105/countdown-recorder/issues"
   },
-  "homepage": "https://github.com/seanwu1105/countdown-recorder#readme"
+  "homepage": "https://github.com/seanwu1105/countdown-recorder#readme",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
+    "parcel-bundler": "^1.11.0",
+    "tslint": "^5.13.0",
+    "typescript": "^3.3.3333",
+    "vue-template-compiler": "^2.6.7"
+  },
+  "dependencies": {
+    "vue": "^2.6.7",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-property-decorator": "^7.3.0"
+  }
 }
