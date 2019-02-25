@@ -4,7 +4,7 @@
   "description": "A countdown recorder for TOEFL speaking test practice.",
   "scripts": {
     "serve": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./countdown-recorder/",
+    "build": "parcel build src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
